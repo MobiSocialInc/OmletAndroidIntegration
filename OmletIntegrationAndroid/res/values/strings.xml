@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Omlet Integration</string>
+    <string name="action_settings">Settings</string>
+    <string name="button_text">Send Text</string>
+    <string name="button_image">Send Image</string>
+    <string name="button_gif">Send Gif</string>
+
+
+</resources>
