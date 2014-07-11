@@ -77,8 +77,10 @@ public class MainActivity extends Activity {
 	    	Intent response = new Intent();
 	    	response.putExtra(Intent.EXTRA_TEXT, "Saying Hi to Omlet!");
 	    	response.setType("text/plain");
+	    	response.setPackage("mobisocial.omlet");
 	    	setResult(RESULT_OK, response);
-	    	finish();
+	    	
+	    	startActivity(response);
 	    }
 	    
 	    public void sendImage()
@@ -87,8 +89,10 @@ public class MainActivity extends Activity {
 	    	Uri uri = Uri.parse("android.resource://com.sf.omletintegrationandroid/" + R.drawable.example_image);
 	    	response.putExtra(Intent.EXTRA_STREAM, uri);
 	    	response.setType("image/png");
+	    	response.setPackage("mobisocial.omlet");
 	    	setResult(RESULT_OK, response);
-	    	finish();
+	    	
+	    	startActivity(response);
 	    }
 	    
 	    public void sendGif()
@@ -97,7 +101,9 @@ public class MainActivity extends Activity {
 	    	Uri uri = Uri.parse("android.resource://com.sf.omletintegrationandroid/" + R.drawable.example_gif);
 	    	response.putExtra(Intent.EXTRA_STREAM, uri);
 	    	response.setType("image/gif");
+	    	response.setPackage("mobisocial.omlet");
 	    	setResult(RESULT_OK, response);
-	    	finish();
+	    	
+	    	startActivity(response);
 	    }
 }
